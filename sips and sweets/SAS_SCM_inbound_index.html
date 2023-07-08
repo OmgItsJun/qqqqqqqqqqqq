@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbound Transaction Form</title>
+  
+    <link rel="stylesheet" type="text/css" href="SAS_SCM_inbound_stylesheet.css">
+  
+</head>
+<body>
+  <h1>Inbound Transaction Form</h1>
+  <form action="SAS_SCM_inbound_results.php" method="post" class="form-container">
+    
+      <label class="form-label" for="supplierName">Supplier's Name</label>
+      <input class="form-input" type="text" name="supplierName" id="supplierName" placeholder="Enter supplier name" required>
+      
+      <label class="form-label" for="address">Address</label>
+      <input class="form-input" type="text" name="address" id="address" placeholder="Address" required>
+
+      <label class="form-label" for="countryCode">Country Code</label>
+      <div class="contact-input-container">
+        <select class="form-input" name="countryCode" id="countryCode" required>
+          <option value="">Country Code</option>
+          <option value="+1">USA (+1)</option>
+          <option value="+44">UK (+44)</option>
+          <option value="+61">Australia (+61)</option>
+          <option value="+63">Philippines (+63)</option>
+        </select>
+      <input class="form-input" type="tel" name="contactInformation" id="contactInformation" placeholder="Contact information" pattern="[0-9]{7,10}" title="Please enter a valid phone number" required>
+      </div>
+
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-input" type="email" name="emailAddress" id="emailAddress" placeholder="Email address" required>
+
+      <label class="form-label" for="productName">Product Name</label>
+      <input class="form-input" type="text" name="productName" id="productName" placeholder="Product name" pattern="[A-Za-z\s]+" title="Please enter a valid product name (alphabetic characters only)" required>
+
+
+      <label class="form-label" for="description">Description</label>
+      <textarea class="form-input" id="description" name="description" rows="4" cols="50" placeholder="Input your description here!" required></textarea>
+
+      <label class="form-label" for="units">Units</label>
+      <input class="form-input" type="number" name="units" id="units" placeholder="Units" required>
+
+      <label class="form-label" for="quantity">Quantity</label>
+      <input class="form-input" type="text" name="quantity" id="quantity" placeholder="Quantity" required>
+
+      <label class="form-label" for="amount">Amount</label>
+      <input class="form-input" type="text" name="amount" id="amount" placeholder="Enter amount" required>
+
+      <label class="form-label" for="currency">Currency</label>
+      <select class="form-input" name="currency" id="currency" required>
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="php">PHP</option>
+      </select>
+
+      <label class="form-label" for="paymentMethod">Payment Method</label>
+      <select class="form-input" name="paymentMethod" id="paymentMethod" required>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="bank">Bank Transfer</option>
+        <option value="paypal">PayPal</option>
+        <option value="cash">Cash</option>
+        <option value="cheque">Cheque</option>
+      </select>
+
+      <label class="form-label" for="termsOfPayment">Terms of payment</label>
+      <select class="form-input" name="termsOfPayment" id="termsOfPayment" required>
+        <option value="pia">PIA/ Payment in advance</option>
+        <option value="net">Payment expected within 90 days</option>
+        <option value="EOM/ End of month">EOM/ End of month</option>
+        <option value="MFI"> 21st of the month</option>
+        <option value="COD">COD/ Cash on delivery</option>
+        <option value="CND">CND/ Cash next delivery</option>
+        <option value="CBS">CBS/ Cash before shipment</option>
+        <option value="CIA">Cash in advance</option>
+      </select>
+
+      <label class="form-label" for="orderedBy">Ordered by</label>
+      <input class="form-input" type="text" name="orderedBy" id="orderedBy" placeholder="Ordered by" required>
+        
+      <label class="form-label" for="orderDate">Order date</label>
+      <input class="form-input" type="date" name="orderDate" id="orderDate" placeholder="Order Date" required>
+
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-input" id="message" name="message" rows="4" cols="50" placeholder="Input your message here!" required></textarea>
+
+      <input class="form-submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>

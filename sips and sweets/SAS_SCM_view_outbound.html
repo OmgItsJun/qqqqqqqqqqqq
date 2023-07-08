@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outbound Transaction</title>
+    <link rel="icon" type="image/png" href="cham_tablogo.png" alt="Champeré Logo">
+    <link rel="stylesheet" type="text/css" href="SAS_SCM_stylesheet.css">
+
+</head>
+<body class="scm">
+    <div class="containerSCM">
+        <h1 class="hscm">Outbound Transaction</h1><hr>
+        <form class="form-containerscm" action="SAS_SCM_outbound_output.php" method="POST">
+<center>
+                <label class="form-labelscm"> Requested By: </label>
+                <input type="text" id="rqtby" name="rqtby" class="form-inputscm" placeholder="Enter Supplier Name.." required><br>
+
+                <label class="form-labelscm">Item Name:</label>
+                <input type="text" id="itemN" name="itemN" class="form-inputscm" placeholder="Enter Item Name.." required><br>
+
+                <label class="form-labelscm">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" class="form-inputscm" placeholder="Enter Quantity.." required><br>
+
+                <label class="form-labelscm">Item Recipient: </label>
+                <input type="text" name="itemR" class="form-inputscm" id="itemR" placeholder="Enter Amount.." required><br>
+
+                <label class="form-labelscm">Request Date:</label>
+                <input type="date" name="reqdate" id="reqdate" class="form-inputscm" required><br>
+
+
+                <label class="form-labelscm">Status:</label>
+                <select class="form-inputscm" id="status" name="status" required>
+                    <option value="" disabled selected>Select Status...</option>
+                    <option value="Processing">Processing </option>
+                    <option value="Shipped">Shipped </option>
+                    <option value="In Transit">In Transit</option>
+                    <option value="Delivered">Delivered</option>	
+                </select><br>
+
+            <input type="submit" class="form-buttonscm" id="submit" name="submit" value="Submit"><br>
+</center>
+        </form>
+    </div>
+</body>
+</html>

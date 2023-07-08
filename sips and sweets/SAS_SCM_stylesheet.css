@@ -1,0 +1,102 @@
+ 
+
+.scm {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffc2d1;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .containerSCM {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hscm {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  }
+  
+ 
+  .form-containerscm {
+  border-radius: 5px;
+  }
+  
+  .form-headerscm {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  }
+  
+  .form-labelscm {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  }
+  
+  .form-inputscm {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  }
+  
+  .form-inputscm:focus {
+  outline: none;
+  border-color: #4b4603;
+  }
+  
+  .form-buttonscm {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #fb6f92;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-buttonscm:hover {
+  background-color: #9e6003;
+  }
+  
+  .form-buttonscm:active {
+  background-color: #663e03;
+  }
+  
+  .labelscm {
+  display: block;
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #555;
+  }
+  
+  .textareascm {
+  width: calc(100% - 130px);
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 50px;
+  resize: vertical;
+  }
+
